@@ -33,14 +33,14 @@ author:
   email            : "pegahmp@psu.edu" 
 
   # Academic websites
-  academia         : # URL
+  googlescholar    : "https://scholar.google.com/citations?user=ZqDKZ_UAAAAJ&hl=en"
+  academia         : "https://science.psu.edu/math/people/pmm5999"
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : "https://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 

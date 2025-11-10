@@ -23,14 +23,14 @@ repository               : "pegah-mp/pegah-mp.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "profile.jpg"
+  name             : "Pegah Mohammadipour"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Mathematics PhD Student"
+  location         : "University Park, PA, USA"
+  employer         : "Penn State University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "pegahmp@psu.edu" 
 
   # Academic websites
   academia         : # URL

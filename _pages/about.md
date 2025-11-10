@@ -8,6 +8,6 @@ redirect_from:
 ---
 
 
-I am a PhD Candidate in the [Mathematics department](https://science.psu.edu/math) at [Penn State](https://www.psu.edu/). My PhD is under the guidance of [Prof. Xiantao Li](https://xxl12.github.io/main/), where my research focuses on **numerical methods** for **open quantum systems**, with particular emphasis on quantum error mitigation and quantum simulation. Beyond my doctoral work, I am also interested in exploring the capabilities of large language models in solving complex mathematical problems.
+I am a Ph.D. Candidate in the [Mathematics department](https://science.psu.edu/math) at [Penn State](https://www.psu.edu/). My PhD is under the guidance of [Prof. Xiantao Li](https://xxl12.github.io/main/), where my research focuses on **numerical methods** for **open quantum systems**, with particular emphasis on quantum error mitigation and quantum simulation. Beyond my doctoral work, I am also interested in exploring the capabilities of large language models in solving complex mathematical problems.
 
 Before my Ph.D., I completed my Bachelor’s degree in Mathematics and Computer Engineering at the [University of Tehran](https://ut.ac.ir/en).

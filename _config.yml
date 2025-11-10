@@ -23,7 +23,7 @@ repository               : "pegah-mp/pegah-mp.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "profile.png"
   name             : "Pegah Mohammadipour"
   pronouns         : # example: "she/her"  
   bio              : "Mathematics PhD Student"

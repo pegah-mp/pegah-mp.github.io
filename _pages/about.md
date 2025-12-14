@@ -6,7 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
 <p>
   I am a Ph.D. Candidate in the <a href="https://science.psu.edu/math">Mathematics Department</a> at
   <a href="https://www.psu.edu/">Penn State University</a>, working under the guidance of

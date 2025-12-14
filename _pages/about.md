@@ -30,6 +30,6 @@ redirect_from:
 </p>
 
 <p>
-Before my Ph.D., I completed my Bachelor’s degree in Mathematics and Computer Engineering at the [University of Tehran](https://ut.ac.ir/en).
+Before my Ph.D., I completed my Bachelor’s degree in Mathematics and Computer Engineering at the <a href="https://ut.ac.ir/en">University of Tehran</a>.
 </p>
 

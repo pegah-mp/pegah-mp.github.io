@@ -19,7 +19,6 @@ redirect_from:
 
 <p>
 Before my Ph.D., I completed my Bachelor’s degree in Mathematics and a Minor in Computer Engineering at the <a href="https://ut.ac.ir/en">University of Tehran</a>.
-</p>
 
 
 <h2> Research Interest</h2>

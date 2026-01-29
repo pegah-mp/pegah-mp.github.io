@@ -18,7 +18,7 @@ redirect_from:
 </p>
 
 <p>
-Before my Ph.D., I completed my Bachelor’s degree in Mathematics and a Minot in Computer Engineering at the <a href="https://ut.ac.ir/en">University of Tehran</a>.
+Before my Ph.D., I completed my Bachelor’s degree in Mathematics and a Minor in Computer Engineering at the <a href="https://ut.ac.ir/en">University of Tehran</a>.
 </p>
 
 

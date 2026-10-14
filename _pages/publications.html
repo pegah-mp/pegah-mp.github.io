@@ -5,32 +5,319 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<style>
+  .pm-publications {
+    --pm-accent: #75428b;
+    --pm-border: #ded4e5;
+    --pm-tint: #f6f0fa;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
 
-{% include base_path %}
+  .pm-publications .pm-intro {
+    margin: 0 0 1.5rem;
+  }
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+  .pm-publications h2 {
+    margin: 2rem 0 .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid var(--pm-border);
+    font-size: 1.3em;
+  }
 
+  .pm-publications .pm-paper {
+    padding: 1.35rem 0;
+    border-bottom: 1px solid var(--pm-border);
+  }
 
+  .pm-publications .pm-meta {
+    margin: 0 0 .5rem;
+    font-size: .8em;
+    font-weight: 600;
+  }
 
+  .pm-publications .pm-type {
+    display: inline-block;
+    margin-right: .55rem;
+    padding: .12rem .55rem;
+    border-radius: .3rem;
+    background: var(--pm-tint);
+    color: var(--pm-accent);
+  }
+
+  .pm-publications h3 {
+    margin: 0 0 .5rem;
+    font-size: 1.06em;
+    line-height: 1.45;
+  }
+
+  .pm-publications h3 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .pm-publications h3 a:hover {
+    text-decoration: underline;
+  }
+
+  .pm-publications .pm-authors,
+  .pm-publications .pm-venue,
+  .pm-publications .pm-summary {
+    margin: .35rem 0;
+    font-size: .9em;
+  }
+
+  .pm-publications .pm-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: .8rem 0 0;
+  }
+
+  .pm-publications .pm-links a {
+    display: inline-block;
+    padding: .25rem .7rem;
+    border: 1px solid var(--pm-border);
+    border-radius: .3rem;
+    color: var(--pm-accent);
+    background: var(--pm-tint);
+    font-size: .8em;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .pm-publications .pm-links a:hover {
+    border-color: var(--pm-accent);
+  }
+
+  .pm-publications a:focus-visible {
+    outline: 3px solid var(--pm-accent);
+    outline-offset: 4px;
+  }
+
+  @media print {
+    .pm-publications .pm-paper {
+      break-inside: avoid;
+    }
+
+    .pm-publications .pm-links {
+      display: none;
+    }
+  }
+</style>
+
+<div class="pm-publications">
+
+  <p class="pm-intro">
+    My research focuses on numerical analysis and quantum algorithms for open
+    quantum systems. I also work on evaluating mathematical reasoning in
+    large language models.
+  </p>
+
+  <section aria-labelledby="pm-quantum">
+    <h2 id="pm-quantum">Quantum computing</h2>
+
+    <article class="pm-paper">
+      <p class="pm-meta">
+        <span class="pm-type">Preprint</span> 2026
+      </p>
+
+      <h3>
+        <a href="https://arxiv.org/abs/2604.26865">
+          MLMC-qDRIFT: Multilevel Variance Reduction for Randomized
+          Quantum Hamiltonian Simulation
+        </a>
+      </h3>
+
+      <p class="pm-authors">
+        <strong>Pegah Mohammadipour</strong> and Xiantao Li
+      </p>
+
+      <p class="pm-venue">arXiv:2604.26865</p>
+
+      <p class="pm-summary">
+        Multilevel Monte Carlo methods for reducing the computational cost of
+        observable estimation in randomized Hamiltonian simulation.
+      </p>
+
+      <div class="pm-links">
+        <a href="https://arxiv.org/abs/2604.26865">arXiv</a>
+        <a href="https://arxiv.org/pdf/2604.26865">PDF</a>
+      </div>
+    </article>
+
+    <article class="pm-paper">
+      <p class="pm-meta">
+        <span class="pm-type">Journal article</span> 2025
+      </p>
+
+      <h3>
+        <a href="https://doi.org/10.1103/dzpc-m1p4">
+          Reducing Circuit Depth in Lindblad Simulations via
+          Step-Size Extrapolation
+        </a>
+      </h3>
+
+      <p class="pm-authors">
+        <strong>Pegah Mohammadipour</strong> and Xiantao Li
+      </p>
+
+      <p class="pm-venue">
+        <em>Physical Review A</em> <strong>112</strong>, 062206 (2025)
+      </p>
+
+      <p class="pm-summary">
+        Step-size extrapolation for open-system quantum simulation, with
+        analysis of approximation error, circuit depth, and measurement variance.
+      </p>
+
+      <div class="pm-links">
+        <a href="https://doi.org/10.1103/dzpc-m1p4">Journal</a>
+        <a href="https://arxiv.org/abs/2507.22341">arXiv</a>
+        <a href="https://arxiv.org/pdf/2507.22341">PDF</a>
+      </div>
+    </article>
+
+    <article class="pm-paper">
+      <p class="pm-meta">
+        <span class="pm-type">Journal article</span> 2025
+      </p>
+
+      <h3>
+        <a href="https://doi.org/10.22331/q-2025-11-14-1909">
+          Direct Analysis of Zero-Noise Extrapolation: Polynomial Methods,
+          Error Bounds, and Simultaneous Physical-Algorithmic Error Mitigation
+        </a>
+      </h3>
+
+      <p class="pm-authors">
+        <strong>Pegah Mohammadipour</strong> and Xiantao Li
+      </p>
+
+      <p class="pm-venue">
+        <em>Quantum</em> <strong>9</strong>, 1909 (2025)
+      </p>
+
+      <p class="pm-summary">
+        Bias, variance, and sample-complexity analysis of polynomial
+        extrapolation, including the simultaneous mitigation of physical
+        and algorithmic errors.
+      </p>
+
+      <div class="pm-links">
+        <a href="https://doi.org/10.22331/q-2025-11-14-1909">Journal</a>
+        <a href="https://arxiv.org/abs/2502.20673">arXiv</a>
+        <a href="https://arxiv.org/pdf/2502.20673">PDF</a>
+      </div>
+    </article>
+  </section>
+
+  <section aria-labelledby="pm-ai">
+    <h2 id="pm-ai">AI and mathematical reasoning</h2>
+
+    <article class="pm-paper">
+      <p class="pm-meta">
+        <span class="pm-type">Workshop paper</span> 2025
+      </p>
+
+      <h3>
+        <a href="https://arxiv.org/abs/2510.27094">
+          CombiGraph-Vis: A Curated Multimodal Olympiad Benchmark
+          for Discrete Mathematical Reasoning
+        </a>
+      </h3>
+
+      <p class="pm-authors">
+        Hamed Mahdavi, Pouria Mahdavinia, Alireza Farhadi,
+        <strong>Pegah Mohammadipour</strong>, Samira Malek, Majid Daliri,
+        Pedram Mohammadipour, Alireza Hashemi, Amir Khasahmadi,
+        and Vasant Honavar
+      </p>
+
+      <p class="pm-venue">
+        MATH-AI Workshop at NeurIPS 2025
+      </p>
+
+      <p class="pm-summary">
+        A multimodal benchmark for evaluating reasoning on competition
+        problems in discrete mathematics.
+      </p>
+
+      <div class="pm-links">
+        <a href="https://arxiv.org/abs/2510.27094">arXiv</a>
+        <a href="https://arxiv.org/pdf/2510.27094">PDF</a>
+        <a href="https://github.com/combigraphviz2025/combigraph-viz">
+          Code and data
+        </a>
+      </div>
+    </article>
+
+    <article class="pm-paper">
+      <p class="pm-meta">
+        <span class="pm-type">Workshop paper</span> 2025
+      </p>
+
+      <h3>
+        <a href="https://arxiv.org/abs/2510.09021">
+          RefGrader: Automated Grading of Mathematical Competition
+          Proofs using Agentic Workflows
+        </a>
+      </h3>
+
+      <p class="pm-authors">
+        Hamed Mahdavi, Pouria Mahdavinia, Samira Malek,
+        <strong>Pegah Mohammadipour</strong>, Alireza Hashemi, Majid Daliri,
+        Alireza Farhadi, Amir Khasahmadi, Niloofar Mireshghallah,
+        and Vasant Honavar
+      </p>
+
+      <p class="pm-venue">
+        MATH-AI Workshop at NeurIPS 2025
+      </p>
+
+      <p class="pm-summary">
+        Automated workflows for assessing mathematical proofs and assigning
+        partial credit using reference solutions and grading rubrics.
+      </p>
+
+      <div class="pm-links">
+        <a href="https://arxiv.org/abs/2510.09021">arXiv</a>
+        <a href="https://arxiv.org/pdf/2510.09021">PDF</a>
+      </div>
+    </article>
+
+    <article class="pm-paper">
+      <p class="pm-meta">
+        <span class="pm-type">Conference paper</span> 2025
+      </p>
+
+      <h3>
+        <a href="https://arxiv.org/abs/2504.01995">
+          Brains vs. Bytes: Evaluating LLM Proficiency
+          in Olympiad Mathematics
+        </a>
+      </h3>
+
+      <p class="pm-authors">
+        Hamed Mahdavi, Alireza Hashemi, Majid Daliri,
+        <strong>Pegah Mohammadipour</strong>, Alireza Farhadi, Samira Malek,
+        Yekta Yazdanifard, Amir Khasahmadi, and Vasant Honavar
+      </p>
+
+      <p class="pm-venue">
+        Conference on Language Modeling (COLM), 2025
+      </p>
+
+      <p class="pm-summary">
+        Human evaluation of the correctness and logical rigor of
+        Olympiad-level mathematical proofs generated by large language models.
+      </p>
+
+      <div class="pm-links">
+        <a href="https://arxiv.org/abs/2504.01995">arXiv</a>
+        <a href="https://arxiv.org/pdf/2504.01995">PDF</a>
+      </div>
+    </article>
+  </section>
+
+</div>
